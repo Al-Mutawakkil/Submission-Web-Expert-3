@@ -1,0 +1,35 @@
+{
+    "name": "Crowd Resto Web App",
+    "short_name": "CrowdResto",
+    "description": "Your Favorite Resto Guide",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#000000",
+    "icons" : [
+        {
+            "src": "/images/icons/icon-300x300.png",
+            "sizes": "300x300",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/icons/icon-450x450.png",
+            "sizes": "450x450",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/icons/icon-600x600.png",
+            "sizes": "600x600",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/icons/icon-900x900.png",
+            "sizes": "900x900",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

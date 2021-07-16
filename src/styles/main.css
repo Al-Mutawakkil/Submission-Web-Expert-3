@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    color: #424242;
+}
+
+a {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+/*
+    Header 
+*/
+
+.header {
+    min-height: 56px;
+    transition: min-height 0.3s;
+}
+
+.header__inner {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__title {
+    font-family: "Nanum Pen Script", "Nunito";
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: #212121;
+    transition: 0.3s ease-in-out;
+}
+
+.header__title:hover {
+    color: rgb(255, 178, 107);
+    cursor: pointer;
+}
+
+.header__menu {
+    font-size: 32px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.header__menu:hover,
+.header__menu:focus {
+    color: rgb(255, 178, 107);
+    cursor: pointer;
+}
+    
+.nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #24252A;
+}
+
+.nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.nav a {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: #edf0f1;
+    transition: 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: rgb(255, 178, 107);
+}
+
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    min-height: 380px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+}
+
+.hero__inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.hero__title {
+    position: relative;
+    z-index: 20;
+    color: #edf0f1;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero__tagline {
+    position: relative;
+    z-index: 20;
+    color: #edf0f1;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.content {
+    padding: 32px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.latest {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.latest__label {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.latest__label::after {
+    content: "";
+    margin-top: 16px;
+    display: block;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.posts {
+    margin: 32px auto auto; 
+    text-align: left;
+}
+
+.post-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.post-item__content {
+    padding: 16px;
+}
+
+.post-item__thumbnail {
+    width: 100%;
+    max-height: 210px;
+}
+
+
+.post-item__rating {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #212121;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-item__rating:hover {
+    cursor: default;
+}
+
+.post-item__rating-tv {
+    display: inline-block;
+}
+
+.post-item__rating-value {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 204, 41);
+    color: #212121;
+    transition: 0.3s ease-in-out;
+}
+
+.post-item__rating-value:hover {
+    color: rgb(255, 204, 41);
+    background-color: #212121;
+}
+
+.post-item__city {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #212121;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-item__city:hover {
+    background-color: rgb(255, 204, 41);
+    cursor:default;
+}
+
+.post-item__title {
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s opacity;
+}
+
+.post-item__title {
+    transition: 0.5s;
+}
+
+.post-item__title a {
+    line-height: 44px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-item__description {
+    font-size: 12px;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+/* 
+    Like
+*/
+
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like:hover {
+    background-color: #b1082f;
+}
+
+/*
+    Resto Detail
+*/
+
+.resto {
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.resto-detail {
+    padding: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.resto-detail__title {
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.resto-detail__desc {
+    font-size: 12px;
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+}
+
+.resto-detail__content {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #727272;
+}
+
+.resto-detail__thumbnail {
+    flex: 0.7;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.resto-detail__thumbnail img{
+    min-height: 450px;
+    min-width: 450px;
+    max-width: 100%;
+}
+
+.resto-detail__menu {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.resto-detail__subtitle {
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.foods__container {
+    margin-left: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.category__container {
+    display: flex;
+    margin-left: -5px;
+}
+
+.category__container .item {
+    margin-left: 5px;
+    padding: 1px 10px;
+    background-color:rgb(255, 178, 107);
+    transition: 0.3s ease-in-out;
+    border-radius: 1em;
+}
+
+.category__container .item p {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.category__container .item:hover {
+    background-color:black;
+    color: rgb(255, 178, 107);
+    cursor: default;
+}
+
+.resto-detail__description {
+    text-align: left;
+    padding: 15px 0;
+    
+}
+
+.resto-detail__desc {
+    font-size: 16px;
+}
+
+.user-review-box {
+    display: flex;
+    border-bottom: 1.5px solid #727272;
+}
+
+.user__info {
+    flex-direction: column;
+    margin: 10px 0 10px 10px;
+}
+
+.user__info-date {
+    color: #424242;
+    font-weight: 300;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+/* 
+    Empty Favorite
+*/
+
+#empty-tag {
+    padding: 200px 0;
+    text-align: center;
+}
+
+#empty-tag a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 10px 15px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+#empty-tag a:hover {
+    color: rgb(255, 178, 107);
+    background-color: black;
+}
+
+footer {
+    background-color: #24252A;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+    padding: 0.8em;
+    color: #edf0f1;
+    transition: 0.3s ease-in-out;
+}
+
+footer p:hover {
+    color: rgb(255, 178, 107);
+}
+
+footer span {
+    color: red;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #212121;
+    color: white;
+    padding: 8px;
+    z-index: 20;
+    text-decoration: none;
+    min-height: 0;
+    min-width: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.skip-link:focus {
+    top: 5px;
+    left: 5px;
+
+}
